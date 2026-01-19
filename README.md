@@ -11,21 +11,21 @@
 - Makes the **R.E.P.O Cart equippable**
 - Allows the cart to be placed into the player’s inventory
 - Prevents permanent cart carrying by automatically removing it after a delay
+- Ensures the cart can **only be equipped inside the extraction zone**
 
 ---
 
 ## ⏱ Current Behavior
 
-- The cart can be equipped
-- **After 10 seconds**, the cart is automatically **thrown out of the inventory**
+- The cart can be equipped **only inside the extraction zone**
+- **After 5 seconds**, the cart is automatically **unequipped** from the player
 - This behavior is temporary and used for testing and balancing
 
 ---
 
 ## 🛠 Planned Features
 
-- Cart can **only be equipped inside the extraction zone**
-- Cart is **automatically unequipped if the player leaves the extraction zone**
+- Automatic unequip if the player leaves the extraction zone
 - Configurable timers and conditions
 - Improved feedback (UI / sound / logs)
 - Multiplayer behavior testing
