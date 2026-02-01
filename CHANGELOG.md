@@ -1,7 +1,5 @@
 # Changelog
 
-# Test
-
 ## CartDump v0.1.4
 
 ### Changes
