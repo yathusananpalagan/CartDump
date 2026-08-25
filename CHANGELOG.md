@@ -1,5 +1,19 @@
 # Changelog
 
+## CartDump v0.1.5
+
+### Changes
+- Complete Mod Revamp, old system got reworked
+- Added a Quick Deposit action for the cart, usable only while the cart is in Strong mode (not while Weak/Dragged).
+- Cart briefly disappears when used, letting all items inside fall to the ground, then reappears near the triggering player after a short delay.
+- Added an interact prompt above the cart that shows only when Quick Deposit is available, and hides itself automatically a few seconds after appearing.
+- Fully multiplayer-synced: the action plays out identically for every player in the lobby.
+- Added a debug logging option (toggleable in the BepInEx Config Manager) to help trace what's happening during testing.
+
+### Bug Fixes
+- Fixed a crash when using Quick Deposit caused by a Unity API not available in this game's Unity version (`Rigidbody.linearVelocity`).
+- Fixed the cart respawning on top of / inside the player instead of a short distance in front of them, by using look direction instead of body direction and snapping to the ground.
+
 ## CartDump v0.1.4
 
 ### Changes

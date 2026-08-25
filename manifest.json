@@ -1,7 +1,7 @@
 {
   "name": "CartDump",
   "description": "A mod to dump Items faster from the cart",
-  "version_number": "0.1.4",
+  "version_number": "0.1.5",
   "dependencies": [
     "BepInEx-BepInExPack-5.4.2304"
   ],
