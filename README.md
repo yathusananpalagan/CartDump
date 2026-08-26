@@ -17,20 +17,33 @@
 ## ⏱ Current Behavior
 
 - Only usable while the cart is in **Strong mode**
-- Walk up to the cart and press **F** while the prompt is visible
+- Walk up to the cart and press the configured **interact key** (default: **F**) while the prompt is visible
 - The prompt shows briefly when conditions are met, then hides itself automatically after a few seconds
-- The cart disappears, items inside fall to the ground, and the cart reappears near you after a short delay
+- The cart disappears, items inside fall to the ground, and after a short delay it respawns **above you** and drops down naturally
 - Timers and range are still being tuned — expect these to change
+
+---
+
+## ⚙️ Configuration
+
+Some values can now be changed via the BepInEx config file (or an in-game config editor mod such as REPOConfig):
+
+- **Interact Key** — the key used to trigger Quick Deposit (default: `F`)
+- **Parked Duration** — how many seconds the cart stays gone before respawning (default: `2s`)
+
+More values (respawn height, interact range, prompt duration) are planned to move into config as well.
+
+> Note: key options currently show as a plain value in some in-game config editors rather than a "press a key to bind" UI — this is a limitation of those tools, not something CartDump controls yet.
 
 ---
 
 ## 🛠 Planned Features
 
-- Configurable timers and conditions (respawn delay, interact range)
+- Move remaining hardcoded values (respawn height, interact range, prompt duration) into config
 - Improved feedback (UI / sound / logs) for Quick Deposit
 - Custom interact prompt visuals to better match the game's own UI style
 - Multiplayer behavior testing across more scenarios (mid-round joins, host migration, simultaneous use)
-- Config file support so server/lobby owners can tweak values without recompiling
+- Friendlier in-game keybind rebinding (press-a-key style) instead of raw config values
 
 ---
 

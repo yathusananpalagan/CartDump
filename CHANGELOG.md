@@ -1,6 +1,15 @@
 # Changelog
 
-## CartDump v0.1.5
+## CartDump v0.1.7
+
+### Changes
+- Interact key for Quick Deposit is now configurable via `ConfigManager` (`ConfigEntry<KeyCode>`) instead of a hardcoded constant.
+- Parked duration (time before the cart respawns) is now configurable via `ConfigManager`; default reduced from 5s to 2s.
+- Cart now respawns directly above the triggering player and falls down naturally via physics, instead of spawning in front of them based on look direction.
+
+---
+
+## CartDump v0.1.5 and v0.1.6
 
 ### Changes
 - Complete Mod Revamp, old system got reworked
